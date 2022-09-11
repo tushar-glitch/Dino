@@ -1,0 +1,84 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0;
+}
+
+.top{
+    font-size: 30px;
+    padding: 40px;
+    right: 100px;
+    color: white;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+body{
+    background-color:black;
+    overflow: hidden;
+    z-index: 9;
+}
+
+.bottom{
+    margin-top: 39%;
+    height: 150px;
+}
+
+.dino{
+    background-image: url('dino.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 194px;
+    height: 100px;
+    background-size: cover;
+    bottom: 0px;
+}
+
+.dragon{
+    background-image: url('dragon.png');
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 187px;
+    height: 127px;
+    background-size: cover;
+    bottom: 0px;
+    right: 0px;
+    animation: dragon 2s linear infinite;
+}
+
+@keyframes dragon{
+    0%{
+        left: 1475px;
+    }
+
+    100%{
+        left: -177px;
+    }
+}
+
+.animatedinoup{
+    animation: animatedinoup 0.5s linear;
+}
+
+@keyframes animatedinoup{
+    0%{
+        bottom: 0px;
+    }
+    50%{
+        bottom:350px;
+    }
+    100%{
+        bottom: 0px;
+    }
+}
+
+
+.gameover{
+    visibility: hidden;
+    position: absolute;
+    color: white;
+    top: 200px;
+    right: 584px;
+    font-size: 70px;
+}
